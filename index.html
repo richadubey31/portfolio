@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color: rgb(0, 0, 34);
+            color:white;
+           font-family: 'Poppins', sans-serif;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 77);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style:none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color:lavender;
+            font-size: 1.01rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin:90px 0;
+        }
+        .firstsection > div{
+            width:30%;
+        }
+        .leftsection{
+            font-size: 3rem;
+            margin:70px 0;
+        }
+        .rightsection img{
+            width:80%;
+            margin:90px 0;
+        }
+        .purple{
+            color:blueviolet;
+        }
+        #element{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Richa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I am <span class="purple">Richa.</span> 
+                <div>I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="./assets/images/IMG20230402171018.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Computer Science Student', 'Developer','Writer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
